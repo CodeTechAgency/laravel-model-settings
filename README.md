@@ -6,12 +6,18 @@ A Laravel package that allows you to assign settings to your models.
 [![GitHub license](https://img.shields.io/github/license/CodeTechPt/laravel-model-settings?style=flat-square)](https://github.com/CodeTechPt/laravel-model-settings/blob/master/LICENSE)
 
 
-## Installation
+## Installation & setup
 
 Add the package to your Laravel app using composer
 
 ```
 composer require codetech/laravel-model-settings
+```
+
+For changing migrations and configurations, you will need to publish both files by running the following Artisan command:
+
+```
+php artisan vendor:publish --provider="CodeTech\ModelSettings\Providers\ModelSettingsServiceProvider"
 ```
 
 

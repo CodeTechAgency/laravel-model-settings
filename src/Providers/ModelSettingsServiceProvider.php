@@ -16,7 +16,7 @@ class ModelSettingsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/model-settings.php', 'settingable'
+            __DIR__ . '/../config/model-settings.php', 'model-settings'
         );
     }
 
