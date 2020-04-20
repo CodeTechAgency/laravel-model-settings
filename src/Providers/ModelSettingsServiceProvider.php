@@ -3,6 +3,7 @@
 namespace CodeTech\ModelSettings\Providers;
 
 use CodeTech\ModelSettings\Models\ModelSetting;
+use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
@@ -56,7 +57,11 @@ class ModelSettingsServiceProvider extends ServiceProvider
      */
     private function loadSettings()
     {
-        $settings = ModelSetting::select('root', 'path', 'value')->get();
+        try {
+            $settings = ModelSetting::select('root', 'path', 'value')->get();
+        } catch (QueryException $exception) {
+            return;
+        }
 
         $results = [];
 
