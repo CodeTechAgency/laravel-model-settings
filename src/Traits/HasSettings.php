@@ -1,10 +1,10 @@
 <?php
 
-namespace CodeTechCMS\Settingable\Traits;
+namespace CodeTechCMS\ModelSettings\Traits;
 
-use CodeTechCMS\Settingable\Models\ModelSetting;
+use CodeTechCMS\ModelSettings\Models\ModelSetting;
 
-trait Settingable
+trait HasSettings
 {
     /**
      * Get all of this model's settings.

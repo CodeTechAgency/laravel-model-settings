@@ -1,12 +1,14 @@
 {
-  "name": "codetech/laravel-settingable",
-  "description": "Endow your Laravel models with settings!",
+  "name": "codetech/laravel-model-settings",
+  "description": "A Laravel package that allows you to assign settings to your models.",
   "keywords": [
     "codetech",
-    "laravel-settingable",
-    "laravel",
+    "laravel-model-settings",
     "settings",
-    "polymorphic"
+    "laravel",
+    "laravel-package",
+    "eloquent-models",
+    "polymorphic-relations"
   ],
   "authors": [
     {
@@ -22,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CodeTech\\Settingable\\": "src/"
+      "CodeTech\\ModelSettings\\": "src/"
     }
   },
   "minimum-stability": "dev",
@@ -30,7 +32,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "CodeTech\\Settingable\\Providers\\SettingableServiceProvider"
+        "CodeTech\\ModelSettings\\Providers\\ModelSettingsServiceProvider"
       ]
     }
   }

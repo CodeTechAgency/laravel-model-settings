@@ -1,12 +1,12 @@
 <?php
 
-namespace CodeTechCMS\Settingable\Providers;
+namespace CodeTechCMS\ModelSettings\Providers;
 
-use CodeTechCMS\Settingable\Models\ModelSetting;
+use CodeTechCMS\ModelSettings\Models\ModelSetting;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
-class SettingableServiceProvider extends ServiceProvider
+class ModelSettingsServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -16,7 +16,7 @@ class SettingableServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/settingable.php', 'settingable'
+            __DIR__ . '/../config/model-settings.php', 'settingable'
         );
     }
 
@@ -32,7 +32,7 @@ class SettingableServiceProvider extends ServiceProvider
 
         $this->setPublishableFiles();
 
-        if (config('settingable.load_into_memory')) {
+        if (config('model-settings.load_into_memory')) {
             $this->loadSettings();
         }
     }
@@ -43,7 +43,7 @@ class SettingableServiceProvider extends ServiceProvider
     private function setPublishableFiles()
     {
         $this->publishes([
-            __DIR__ . '/../config/settingable.php' => config_path('settingable.php')
+            __DIR__ . '/../config/model-settings.php' => config_path('model-settings.php')
         ], 'config');
 
         $this->publishes([
