@@ -15,6 +15,7 @@ class CreateModelSettingsTable extends Migration
     {
         Schema::create('model_settings', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('root');
             $table->string('path')->unique();
             $table->string('name');
             $table->string('scope');
