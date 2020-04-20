@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeTechCMS\ModelSettings\Providers;
+namespace CodeTech\ModelSettings\Providers;
 
-use CodeTechCMS\ModelSettings\Models\ModelSetting;
+use CodeTech\ModelSettings\Models\ModelSetting;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 

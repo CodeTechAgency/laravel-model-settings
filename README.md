@@ -46,7 +46,7 @@ Use the trait in your models.
 
 ```
 
-use CodeTechCMS\ModelSettings\Traits\HasSettings;
+use CodeTech\ModelSettings\Traits\HasSettings;
 
 class Theme extends Model
 {

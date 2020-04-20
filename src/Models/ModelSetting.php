@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeTechCMS\ModelSettings\Models;
+namespace CodeTech\ModelSettings\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

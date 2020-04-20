@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeTechCMS\ModelSettings\Traits;
+namespace CodeTech\ModelSettings\Traits;
 
-use CodeTechCMS\ModelSettings\Models\ModelSetting;
+use CodeTech\ModelSettings\Models\ModelSetting;
 
 trait HasSettings
 {
