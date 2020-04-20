@@ -11,6 +11,7 @@ class ModelSetting extends Model
      * @inheritDoc
      */
     protected $fillable = [
+        'root',
         'path',
         'name',
         'scope',
